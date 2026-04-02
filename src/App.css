@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Prata&display=swap');
+
+:root {
+  --bg: #f7f3ea;
+  --ink: #1f2530;
+  --muted: #5a6270;
+  --line: rgba(31, 37, 48, 0.16);
+  --primary: #8d6a2f;
+  --primary-deep: #6f5327;
+  --dark: #0f1825;
+  --radius: 18px;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  background: radial-gradient(circle at 95% -10%, rgba(141, 106, 47, 0.22), rgba(141, 106, 47, 0)), var(--bg);
+}
+
+.law-shell {
+  width: min(100% - 2.3rem, 1500px);
+  margin-inline: auto;
+}
+
+.law-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  background: rgba(247, 243, 234, 0.82);
+  border-bottom: 1px solid var(--line);
+}
+
+.law-nav {
+  min-height: 4.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.law-brand img {
+  width: 180px;
+  max-width: 44vw;
+  display: block;
+}
+
+.law-call {
+  text-decoration: none;
+  color: var(--primary-deep);
+  font-weight: 700;
+}
+
+.law-hero {
+  padding: 3.5rem 0 2.8rem;
+}
+
+.hero-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1.05fr 1fr;
+}
+
+.hero-grid article {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: clamp(1.15rem, 2vw, 2.3rem);
+}
+
+.eyebrow {
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.78rem;
+  color: var(--primary);
+}
+
+.hero-grid h1 {
+  margin: 0.45rem 0 0.75rem;
+  font-family: 'Prata', serif;
+  font-size: clamp(2rem, 4.9vw, 4.2rem);
+  line-height: 1.06;
+}
+
+.hero-grid p {
+  color: var(--muted);
+  max-width: 65ch;
+}
+
+.hero-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.hero-actions a {
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.8rem 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(120deg, var(--primary), #c49441);
+}
+
+.hero-actions a.ghost {
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.hero-grid img {
+  width: 100%;
+  min-height: 380px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+
+.position-grid {
+  padding: 1.1rem 0 3.2rem;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.position-grid article {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.66);
+}
+
+.position-grid h3 {
+  margin-top: 0;
+  font-family: 'Prata', serif;
+  font-size: 1.25rem;
+}
+
+.position-grid p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.practice-band {
+  background: var(--dark);
+  color: #f7efe2;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.practice-inner {
+  padding: 3.2rem 0;
+}
+
+.practice-head h2 {
+  margin: 0.45rem 0 0;
+  font-family: 'Prata', serif;
+  font-size: clamp(1.7rem, 3.1vw, 2.5rem);
+  max-width: 22ch;
+}
+
+.practice-grid {
+  margin-top: 1.2rem;
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.practice-pill {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 0.9rem;
+  font-weight: 600;
+}
+
+.office-grid {
+  padding: 3.3rem 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 0.95fr 1.05fr;
+}
+
+.office-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 1.1rem;
+}
+
+.office-card h3 {
+  margin-top: 0.35rem;
+  font-size: 1.8rem;
+  font-family: 'Prata', serif;
+}
+
+.office-card p {
+  color: var(--muted);
+}
+
+.office-card a {
+  color: var(--primary-deep);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.map-link {
+  display: inline-flex;
+  margin-top: 0.5rem;
+}
+
+.office-grid img {
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+
+.mobile-cta {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .hero-grid,
+  .office-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .position-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .practice-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .practice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-cta {
+    display: flex;
+    position: fixed;
+    left: 0.7rem;
+    right: 0.7rem;
+    bottom: 0.7rem;
+    z-index: 95;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 800;
+    color: #fff;
+    padding: 0.92rem 1rem;
+    background: linear-gradient(120deg, var(--primary), #b88a3f);
+    box-shadow: 0 14px 32px rgba(111, 83, 39, 0.42);
+  }
+
+  .office-grid {
+    padding-bottom: 5.4rem;
+  }
+}
